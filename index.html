@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html id="ad">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>my project</title>
+  </head>
+  <body>
+    <button onclick="rtl()">rtl</button> <br />
+    <button onclick="ltr()">ltr</button> <br />
+
+    <hr />
+    <input
+      type="number"
+      id="a"
+      value="0"
+      onclick="change(100,`img/pic_bulbon.gif`)"
+    />
+    <br />
+    <br />
+    <select id="type">
+      <option value="select type">select type</option>
+      <option value="plus">plus</option>
+      <option value="mines">mines</option>
+      <option value="times">times</option>
+      <option value="divid">divid</option>
+    </select>
+    <br /><br />
+    <input type="number" id="b" value="0" /> <br />
+    <br />
+    <input type="number" id="c" value="0" />
+    <button onclick="inc()">+</button>
+    <button onclick="de()">-</button>
+    <br />
+    <br />
+    <button onclick="clculate()">run</button>
+    <hr />
+    <img src="img/pic_bulbon.gif" id="bulb" /><br />
+    <button onclick="reclick(`img/pic_bulbon.gif`)">on</button>
+    <button onclick="reclick(`img/pic_bulboff.gif`)">off</button>
+    <br />
+    <button onclick="resize(100)">big</button>
+    <button onclick="resize(50)">small</button> <br />
+    <button onclick="change(100,`img/pic_bulbon.gif`)">
+      change big and on
+    </button>
+    <button onclick="change(50,`img/pic_bulboff.gif`)">
+      change small and off
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

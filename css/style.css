@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.logo img {
+  width: 150px;
+}
+header .avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #16283c;
+}
+
+main {
+  width: 75%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #fe5722;
+  color: white;
+  padding: 5px 15px;
+  column-gap: 20px;
+}
+
+footer {
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  font-size: 25px;
+}
+.icons i {
+  color: #fff;
+}
+header .right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 20px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #16283c;
+  min-height: 100vh;
+}
+.sidebar .avatar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: center;
+  padding: 10px;
+  background-color: #204162;
+}
+.sidebar .avatar img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.sidebar .avatar .name {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar .avatar .name strong {
+  color: #fff;
+}
+.sidebar .avatar .name span {
+  color: #38aa93;
+}
+.sidebar > strong {
+  color: #fff;
+  padding: 25px;
+  border-bottom: solid 2px #fe5722;
+  margin-bottom: 10px;
+}
+
+.sidebar nav {
+}
+.sidebar nav > ul {
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sidebar nav > ul > li {
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.sidebar nav > ul > li::before {
+  font-family: "Material Design Icons";
+  font-size: 18px;
+  margin-right: 10px;
+}
+.sidebar nav > ul > li:nth-child(1):before {
+  content: "\F029A";
+  color: #ff9500;
+}
+.sidebar nav > ul > li:nth-child(2):before {
+  content: "\F072C";
+  color: #e34b26;
+}
+.sidebar nav > ul > li:nth-child(3):before {
+  content: "\F0003";
+  color: #593ea9;
+}
+.sidebar nav > ul > li:nth-child(4):before {
+  content: "\F04EB";
+  color: #a129b1;
+}
+.sidebar nav > ul > li:nth-child(5):before {
+  content: "\F003B";
+  color: #0590d5;
+}
+.sidebar nav > ul > li:nth-child(6):before {
+  content: "\F1494";
+  color: #3991db;
+}
+.sidebar nav > ul > li:nth-child(7):before {
+  content: "\F06CB";
+  color: #ef1c63;
+}
+.sidebar nav > ul > li:nth-child(8):before {
+  content: "\F06FE";
+  color: #f4971e;
+}
+.sidebar nav > ul > li:nth-child(9):before {
+  content: "\F034D";
+  color: #a029b7;
+}
+.sidebar nav > ul > li:nth-child(10):before {
+  content: "\F0128";
+  color: #139992;
+}
+.sidebar nav > ul > li:nth-child(11):before {
+  content: "\F0493";
+  color: #f6981e;
+}
+.sidebar nav > ul > li.drop-down {
+  position: relative;
+}
+.sidebar nav > ul > li.drop-down ul {
+  list-style: none;
+  position: absolute;
+  right: -110px;
+  background-color: #204162;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  top: 0px;
+  width: 150px;
+  border-radius: 8px;
+  display: none;
+}
+
+.sidebar nav > ul > li.drop-down ul li {
+}
+.sidebar nav > ul > li.drop-down:hover ul {
+  display: block;
+}
+header .right .menu {
+  display: none;
+}
+.sidebar nav > ul > li.drop-down-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 36px;
+}
+.sidebar nav > ul > li.drop-down-2 ul {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin: 0 0 0 -55px;
+  padding: 0;
+  list-style: none;
+  row-gap: 10px;
+  background-color: #204162;
+  width: 247px;
+  max-height: 0;
+  overflow: hidden;
+}
+.sidebar nav > ul > li.drop-down-2 ul li {
+  padding: 0px 0 15px 70px;
+  border-bottom: solid 1px #16283c;
+}
+.sidebar nav > ul > li.drop-down-2.open ul li:first-child {
+  padding-top: 10px;
+}
+.sidebar nav > ul > li.drop-down-2.open ul {
+  max-height: 100%;
+  margin-top: 15px;
+}
+.sidebar nav li {
+  cursor: pointer;
+}
+.sidebar nav > ul > li.drop-down-2::before {
+  margin: 0 0 -20px -26px;
+}
