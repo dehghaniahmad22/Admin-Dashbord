@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
+      integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Users</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <img src="img/loading-1.gif" width="300px" alt="" />
+    </div>
+    <div class="sidebar">
+      <div class="avatar">
+        <img src="img/profile.jpg" alt="" />
+        <div class="name">
+          <strong>Ahmad Dehghani</strong>
+          <span>online</span>
+        </div>
+      </div>
+      <strong>General</strong>
+      <nav>
+        <ul>
+          <li><a href="dashbord.html">Dashboard</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li>Elements</li>
+          <li>Tables</li>
+          <li class="drop-down-2">
+            Apps
+            <ul>
+              <li>new apps</li>
+              <li>apps list</li>
+            </ul>
+          </li>
+          <li>Pricing Tables</li>
+          <li class="drop-down-2">
+            Contact
+            <ul>
+              <li>number</li>
+              <li>email</li>
+              <li>addres</li>
+            </ul>
+          </li>
+          <li>Additional Pages</li>
+          <li>Map</li>
+          <li>Charts</li>
+          <li>Setting</li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <header>
+        <div class="logo">
+          <img src="img/logo.png" alt="" class="logo-image" />
+        </div>
+        <div class="right">
+          <div class="profile">
+            <span>Ahmad Dehghani</span>
+            <img src="img/profile.jpg" alt="" class="avatar" />
+          </div>
+          <div class="menu">
+            <i class="mdi mdi-menu"></i>
+          </div>
+          <div class="icons">
+            <i class="mdi mdi-account"></i>
+            <i class="mdi mdi-message-processing"></i>
+            <i class="mdi mdi-shopping"></i>
+          </div>
+        </div>
+      </header>
+      <div>
+        <h1>Users</h1>
+        <div class="modal">
+          <div class="form">
+            <i class="mdi mdi-close" onclick="new_user_modal(`none`)"></i>
+            <h2>store new user form</h2>
+            <input placeholder="Name" type="text" name="name" />
+            <input placeholder="Username" type="text" name="username" />
+            <input placeholder="Email" type="text" name="email" />
+            <input placeholder="Website" type="text" name="website" />
+            <input placeholder="Phone Number" type="text" name="phone" />
+            <input
+              onclick="store_new_user()"
+              type="button"
+              value="store user"
+            />
+          </div>
+        </div>
+
+        <div class="edit-modal">
+          <div class="form">
+            <i class="mdi mdi-close" onclick="edit_user_modal(`none`)"></i>
+            <h2>edit user form</h2>
+            <input placeholder="Name" type="text" name="name" />
+            <input placeholder="Username" type="text" name="username" />
+            <input placeholder="Email" type="text" name="email" />
+            <input placeholder="Website" type="text" name="website" />
+            <input placeholder="Phone Number" type="text" name="phone" />
+            <input onclick="" type="button" value="edit user" />
+          </div>
+        </div>
+        <div class="top-inputs">
+          <button onclick="new_user_modal(`flex`)">New User</button>
+          <input id="Search" placeholder="Search ..." type="text" />
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>username</th>
+              <th>email</th>
+              <th>phone</th>
+              <th>website</th>
+              <th>manage</th>
+            </tr>
+          </thead>
+          <tbody id="users"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/script.js"></script>
+    <script src="js/users.js"></script>
+  </body>
+</html>
